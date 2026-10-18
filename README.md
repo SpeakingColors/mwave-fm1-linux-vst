@@ -5,6 +5,9 @@ Controller plugin for the M-VAVE FM-1 on Linux.
 ## Status
 Early work in progress. Free and open source. Donations welcome (link coming).
 
+## Docs
+- [Roadmap](ROADMAP.md)
+
 ## License
 AGPL-3.0-or-later, see [LICENSE](LICENSE).
 
