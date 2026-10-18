@@ -3,7 +3,8 @@
 Controller for the M-VAVE FM-1 that handles its custom firmwares (Felucca and others).
 
 ## Next
-- [ ] Study the firmware formats
+- [x] Device notes and updater design written
+- [ ] Study the firmware formats (capture M-UPGRADE)
 - [ ] Preset and parameter editor
 - [ ] Firmware update tool (shared with the gear updater idea)
 

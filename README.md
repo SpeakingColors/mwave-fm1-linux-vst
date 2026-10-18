@@ -9,7 +9,9 @@ Early work in progress. Free and open source. Donations welcome (link coming).
 
 ## Docs
 - [Roadmap](ROADMAP.md)
+- [Device notes](docs/DEVICE-NOTES.md)
 - [Firmware notes](docs/FIRMWARE-NOTES.md)
+- [Updater design](docs/UPDATER-DESIGN.md) (gear updater, FM-1 first)
 
 ## License
 AGPL-3.0-or-later, see [LICENSE](LICENSE).
