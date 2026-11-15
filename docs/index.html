@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M-VAVE FM-1 for Linux</title>
+<style>
+:root{--bg:#161638;--panel:#1c1c4a;--line:#33403f;--text:#e8e6e1;--muted:#9a9690;--teal:#02EBBA;--pink:#FF1383;--amber:#FFA600}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 48px}
+h1{margin:0 0 4px;font-size:34px} h2{color:var(--teal);font-size:20px;margin:28px 0 8px}
+a{color:var(--pink)} .muted{color:var(--muted)}
+img.shot{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;display:block}
+.cap{color:var(--muted);font-size:13px;margin-top:6px}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:12px 0}
+.box b{color:var(--amber)} li{margin:3px 0}
+code{background:#0e0e26;padding:1px 5px;border-radius:4px}
+.links a{display:inline-block;margin:4px 12px 4px 0}
+</style></head><body><main>
+<h1>M-VAVE FM-1 for Linux</h1>
+<p class="muted">Controller plugin for Linux, early work · Studio 87</p>
+<p>A controller for the M-VAVE FM-1 that is meant to handle its custom firmwares. Only a small updater seed exists today.</p>
+<img class="shot" src="screenshot.png" alt="Illustrated card for M-VAVE FM-1 for Linux">
+<div class="cap">Illustrated card, not a screenshot: no plugin window exists yet.</div>
+<div class="box"><b>Status: early work in progress</b><p>There is no FM-1 controller plugin yet and no MIDI map in our files. What exists is notes and a small command line checker for firmware files.</p></div>
+<h2>What exists today</h2><ul><li><code>tools/gear_updater/</code>: lists MIDI ports and checks a firmware .syx file (framing, size, SHA-256) with a safety checklist, plus a dry run. It does <b>not</b> flash anything: the FM-1 update protocol still has to be captured and verified. Run <code>python3 tools/gear_updater/gear_updater.py dry-run FILE.syx</code>.</li><li>Unit tests for it in <code>tests/</code> and a test workflow.</li><li>Device notes, firmware notes and an updater design document in <code>docs/</code>.</li><li>README, ROADMAP.md, LICENSE (AGPL-3.0-or-later), icon and the illustrated card above.</li></ul>
+<h2>What does not exist yet</h2><ul><li>A controller or editor plugin, a window, a mockup.</li><li>A MIDI map or SysEx parameter map for the FM-1 (no M-VAVE manual or MIDI chart in our files).</li><li>Any flashing or rollback code.</li></ul>
+<h2>Roadmap</h2><p class="muted">Copied from ROADMAP.md in the repo.</p><ul><li>Device notes and updater design written (done)</li><li>Study the firmware formats (capture M-UPGRADE)</li><li>Preset and parameter editor</li><li>Firmware update tool (shared with the gear updater idea)</li><li>SysEx file check, port listing, dry run, unit tests (done)</li><li>Capture M-UPGRADE with USBPcap and document the FM-1 update framing</li><li>Flash and rollback for the FM-1 only after the above is verified</li><li>Move to its own gear-updater repo (needs creating on GitHub)</li></ul>
+<div class="links"><h2>Links</h2><a href="https://github.com/SpeakingColors/mwave-fm1-linux-vst">Source on GitHub</a><a href="https://github.com/SpeakingColors/mwave-fm1-linux-vst/blob/main/docs/DEVICE-NOTES.md">Device notes</a><a href="https://github.com/SpeakingColors/mwave-fm1-linux-vst/blob/main/docs/FIRMWARE-NOTES.md">Firmware notes</a><a href="https://github.com/SpeakingColors/mwave-fm1-linux-vst/blob/main/docs/UPDATER-DESIGN.md">Updater design</a><a href="https://github.com/SpeakingColors/mwave-fm1-linux-vst/blob/main/ROADMAP.md">Roadmap</a><a href="https://ko-fi.com/studio87">Support Studio 87 on Ko-fi</a></div>
+<p class="cap">AGPL-3.0-or-later. Not affiliated with or endorsed by any hardware maker named here. All trademarks belong to their owners.</p></main></body></html>

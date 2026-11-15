@@ -12,7 +12,7 @@
 Controller plugin for the M-VAVE FM-1 on Linux.
 
 ## Status
-Early work in progress. No FM-1 controller plugin yet (no MIDI map in our files).
+Early work in progress. See the [web page](docs/index.html). No FM-1 controller plugin yet (no MIDI map in our files).
 
 **Gear updater, first piece:** `tools/gear_updater/` can list MIDI ports and check a firmware `.syx` file (framing, size, SHA-256) with a safety checklist. It does **not** flash anything: the FM-1 update protocol still has to be captured and verified. Run `python3 tools/gear_updater/gear_updater.py dry-run FILE.syx`. A separate `gear-updater` repo does not exist yet; this folder is its seed.
 
