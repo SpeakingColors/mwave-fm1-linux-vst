@@ -4,6 +4,8 @@ Controller for the M-VAVE FM-1 that handles its custom firmwares (Felucca and ot
 
 ## Next
 - [x] Device notes and updater design written
+- [x] Collect community SysEx documentation with sources ([MIDI-IMPLEMENTATION.md](docs/MIDI-IMPLEMENTATION.md))
+- [ ] Read the official M-VAVE MIDI reference ("FM-1 MIDI EN.docx") and fill in the CC table
 - [ ] Study the firmware formats (capture M-UPGRADE)
 - [ ] Preset and parameter editor
 - [ ] Firmware update tool (shared with the gear updater idea)
@@ -13,7 +15,7 @@ Controller for the M-VAVE FM-1 that handles its custom firmwares (Felucca and ot
 - Settings page with MIDI filters on by default, selectable preset/backup folders, UI size reset to 100%
 
 ## Gear updater (seed in tools/gear_updater)
-- [x] SysEx file check, port listing, dry run, unit tests
+- [x] SysEx file check, port listing, receive-only monitor, frame decoder, dry run, unit tests
 - [ ] Capture M-UPGRADE with USBPcap and document the FM-1 update framing
 - [ ] Flash and rollback for the FM-1 only after the above is verified
 - [ ] Move to its own `gear-updater` repo (needs creating on GitHub)
